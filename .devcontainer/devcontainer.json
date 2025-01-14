@@ -1,0 +1,17 @@
+{
+  "name": "Go Dev Environment",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "workspaceFolder": "/workspace",
+  "settings": {
+    "go.gopath": "/workspace",
+    "go.useLanguageServer": true
+  },
+  "extensions": [
+    "golang.go",
+    "ms-vscode-remote.remote-containers"
+  ],
+  "postCreateCommand": "go mod tidy",
+  "remoteUser": "root"
+}
